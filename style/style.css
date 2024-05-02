@@ -1,0 +1,211 @@
+/*
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Kanit', sans-serif; 
+}
+*/
+@font-face {
+    font-family: 'Gacor';
+    src: url('Gacor.eot');
+    src: local('Gacor'),
+        url('Gacor.eot?#iefix') format('embedded-opentype'),
+        url('Gacor.woff2') format('woff2'),
+        url('Gacor.woff') format('woff'),
+        url('Gacor.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('Gilroy-Medium.woff2') format('woff2'),
+        url('Gilroy-Medium.woff') format('woff'),
+        url('Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+html, body {
+    background-color: #b8b8b8;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Nav */
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    height: 80px;
+    width: 100%;
+    
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -20px;
+    margin-right: 20px;
+    flex-grow: 1;
+}
+
+.nav-link {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+
+}
+
+.login-link img {
+    width: 30px;
+    height: 30px;
+}
+
+.nav-link a {
+
+    color: white;
+    text-decoration: none;
+
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+}
+
+.menuLine {
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    border-top: 5px solid #000000;
+    width: 100%;
+}
+
+/* Nav End */
+
+.logo-text {
+    font-family: 'Gacor';
+    color: white;
+    font-weight: normal;
+    font-style: normal;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.under-logo-text {
+    font-family: 'Gilroy';
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: 25px;
+    z-index: 2;
+}
+
+.logo-shape {
+    height: 70px;
+    width: 175px;
+    background-color: #9e079e;
+    border-radius: 35px;
+    position: absolute;
+    top: calc(240px + 30px);
+    left: 49%;
+    z-index: 1;
+}
+
+.square-container {
+    position: relative;
+}
+
+.square {
+    height: 70px;
+    width: 70px;
+    background-color: #333; 
+    border-radius: 10px;
+    position: absolute;
+    top: calc(240px + 30px);
+}
+
+.square:nth-child(2) {
+    left: calc(50% + 95px);
+}
+
+.square:nth-child(3) {
+    left: calc(50% + 175px);
+}
+
+.square:nth-child(4) {
+    left: calc(50% + 255px);
+}
+
+
+/* Games */
+
+.selection-games {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+} 
+
+.selection-games button {
+    background-color: #9e079e;
+    color: white;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 35px;
+    cursor: pointer;
+
+}
+
+.first-game,
+.second-game,
+.third-game,
+.fourth-game {
+    flex: 1;
+    text-align: center;
+}
+
+.second-game,
+.third-game {
+    margin-top: 20px;
+}
+
+.third-game,
+.fourth-game {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+/* Games End */
+
+/* Footer */
+
+.container-footer {
+    position: fixed;
+    font-family: 'Gacor';
+    font-size: 10px;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 10px;
+    background-color: gray;
+    text-align: center;
+}
+
+/* Footer End */
